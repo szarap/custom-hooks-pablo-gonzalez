@@ -6,11 +6,11 @@ const init = () => {
 }
 
 export const useTodos = () => {
-
-    const [ todos, dispatc.( todoReducer, [], init );
+  
+    const [ todos, dispatch ] = useReducer( todoReducer, [], init );
 
     useEffect(() => {
-        localStorage.setItem('todos', JSON.stringify( todos ) );
+      localStorage.setItem('todos', JSON.stringify( todos ) );
     }, [todos])
     
 
